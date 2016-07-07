@@ -1,10 +1,8 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from ping.views import status
 
 
-urlpatterns = patterns(
-    '',
-
+urlpatterns = [
     url(r'^$', status, name='status'),
-)
+]
