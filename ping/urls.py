@@ -4,5 +4,5 @@ from ping.views import status
 
 
 urlpatterns = [
-    url(r'^$', status, name='status'),
+    re_path(r'^$', status, name='status'),
 ]
