@@ -1,8 +1,8 @@
-from django.conf.urls import url
+from django.urls import re_path
 
 from ping.views import status
 
 
 urlpatterns = [
-    url(r'^$', status, name='status'),
+    re_path(r'^$', status, name='status'),
 ]
